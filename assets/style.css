@@ -38,6 +38,44 @@
     padding: 0 32px;
     text-decoration: none;
     }
+    @media (max-width: 540px) {
+    header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 100%;
+        }
+    
+        header nav {
+            display: flex;
+            width: 100%;
+            border-top: 1px solid white;
+            padding-top: 20px;
+        }
+    
+        header nav a {
+    
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+        }
+    }
+    @media(max-width:1024px){
+        header{
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        header a{
+            padding: 0 16px;
+        }
+    }
+
     /* Seção inicial */
     #inicio {
     display: flex;
@@ -81,7 +119,72 @@
     width: 100%;
     z-index: -10;
     }
-
+    @media(max-width: 424px) {
+        #inicio .botao-transparente{
+            display: none;
+        }
+    }
+    @media (max-width: 540px) {
+    #inicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 64px 16px;
+    }
+    #inicio > img {
+        width: 100%;
+    }
+    #inicio .absolute {
+        display: none;
+    }
+    #inicio div h1{
+        font-size: 24px;
+        text-align: center;
+        padding: 0 16px;
+    }
+    #inicio div p{
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 16px;
+    }
+    #inicio div a{
+        font-size: 16px;
+        padding: 16px 8px;
+    }
+}
+      @media (max-width: 1256px) {
+            #inicio {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 64px 16px;
+            }
+    
+            #inicio>img {
+                width: 50%;
+            }
+    
+            #inicio .absolute {
+                display: none;
+            }
+    
+            #inicio div h1 {
+                font-size: 24px;
+                text-align: center;
+                padding: 0 16px;
+            }
+    
+            #inicio div p {
+                font-size: 16px;
+                text-align: justify;
+                padding: 0 16px;
+            }
+    
+            #inicio div a {
+                font-size: 16px;
+                padding: 16px 8px;
+            }
+        }
     /* Seção clínica */
     #clinica {
     display: flex;
@@ -94,7 +197,66 @@
     margin-bottom: 16px;
     margin-left: 32px;
     }
-
+    @media(max-width:425px){
+        #clinica{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 64px 16px;
+        gap: 32px;
+        }
+        #clinica p{
+            max-width: 100%;
+            text-align: justify;
+        }
+        #clinica ul{
+            max-width: 100%;
+            text-align: left;
+        }
+        #clinica img{
+            max-width: 100%;
+        }
+    }
+    @media(max-width:768px){
+        #clinica{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 64px 16px;
+        gap: 32px;
+        }
+        #clinica p{
+            max-width: 100%;
+            text-align: justify;
+        }
+        #clinica ul{
+            max-width: 100%;
+            text-align: left;
+        }
+        #clinica img{
+            max-width: 100%;
+        }
+    }
+    @media(max-width:1024px){
+        #clinica{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 64px 16px;
+        gap: 32px;
+        }
+        #clinica p{
+            max-width: 100%;
+            text-align: justify;
+        }
+        #clinica ul{
+            max-width: 100%;
+            text-align: left;
+        }
+        #clinica img{
+            max-width: 100%;
+        }
+    }
     /* Seção petshop e farmácia */
     #farmacia {
     padding: 64px 80px;
@@ -108,6 +270,51 @@
     #farmacia .paragrafo {
     max-width: 950px;
     margin: 0 auto;
+    }
+    @media(max-width:425px){
+        #farmacia{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 64px 16px;
+        }
+        #farmacia .paragrafo{
+            text-align: justify;
+            max-width: 100%;
+        }
+        #farmacia img{
+            max-width: 100%;
+        }
+    }
+    @media(max-width:768px){
+        #farmacia{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 64px 16px;
+        }
+        #farmacia .paragrafo{
+            text-align: justify;
+            max-width: 100%;
+        }
+        #farmacia img{
+            max-width: 100%;
+        }
+    }
+    @media(max-width:1024px){
+        #farmacia{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 64px 16px;
+        }
+        #farmacia .paragrafo{
+            text-align: justify;
+            max-width: 100%;
+        }
+        #farmacia img{
+            max-width: 100%;
+        }
     }
 
     /* Seção dúvidas frequentes */
@@ -155,6 +362,52 @@
     padding: 24px;
     }
 
+    @media(max-width:425px){
+        #duvidas{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 64px 16px;
+        }
+        #duvidas img,.duvida img{
+            display: none;
+        }
+        #duvidas .paragrafo{
+            text-align: justify;
+            max-width: 100%;
+        }
+    }
+    @media(max-width:768px){
+        #duvidas{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 64px 16px;
+        }
+        #duvidas img,.duvida img{
+            display: none;
+        }
+        #duvidas .paragrafo{
+            text-align: justify;
+            max-width: 100%;
+        }
+    }
+    @media(max-width:1024px){
+        #duvidas{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 64px 16px;
+        }
+        #duvidas img,.duvida img{
+            display: none;
+        }
+        #duvidas .paragrafo{
+            text-align: justify;
+            max-width: 100%;
+        }
+    }
+
     /* Rodapé */
     footer {
     background-color: #ff986c40;
@@ -198,4 +451,55 @@
     #copyright a {
     color: #ff9a6c;
     text-decoration: none;
+    }
+
+    @media(max-width:425px){
+        footer{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 64px 16px;
+        }
+        footer div{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        footer p{
+            max-width: 100%;
+        }
+        footer nav{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    @media(max-width:768px){
+        footer{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 64px 16px;
+        }
+        footer div{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        footer p{
+            max-width: 100%;
+        }
+        footer nav{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
